@@ -8,7 +8,7 @@ from arrays import Array
 from llistqueue import Queue
 from people import TicketAgent, Passanger
 
-logging.basicConfig(filename="logs/logs.log", filemode='w', level=logging.DEBUG)
+logging.basicConfig(filename="logs.log", filemode='w', level=logging.DEBUG)
 
 class TicketCounterSimulation:
     """
