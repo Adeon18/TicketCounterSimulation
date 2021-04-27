@@ -3,4 +3,4 @@ TicketCounterSimulation is a simple model for simulating Airplane queue. It uses
 
 # Usage
 
-Just launch the _main.py_ script and check the _logs/logs.log_ file.
+Just launch the _main.py_ script and check the _logs.log_ file.
