@@ -10,7 +10,7 @@ class Queue:
     def __len__(self):
         return self._count
     
-    def enqueue(self, item):
+    def add(self, item):
         node = _QueueNode(item)
         if self.isEmpty():
             self._qhead = node
@@ -19,7 +19,7 @@ class Queue:
         self._qtail = node
         self._count += 1
     
-    def dequeue(self):
+    def pop(self):
         assert not self.isEmpty(), "Cannot dequeue from an empty queue."
         node = self._qhead
         if self._qhead is self._qtail:
@@ -31,7 +31,7 @@ class Queue:
     def lst_all(self):
         lst = []
         while not self.isEmpty():
-            it = self.dequeue()
+            it = self.pop()
             lst.append(it)
         return lst
 

@@ -2,15 +2,15 @@
 
 class Passanger:
     def __init__(self, id_num, arrival_time):
-        self._id_num = id_num
+        self.id_num = id_num
         self._arrival_time = arrival_time
-    
-    def id_num(self):
-        """
-        Get the id num
-        """
-        return self.id_num
-    
+    # @property
+    # def id_num(self):
+    #     """
+    #     Get the id num
+    #     """
+    #     return self.id_num
+    @property
     def time_arrived(self):
         """
         Get the arrival time
@@ -20,12 +20,12 @@ class Passanger:
 
 class TicketAgent:
     def __init__(self, id_num):
-        self._id_num = id_num
+        self.id_num = id_num
         self._passenger = None
         self._stop_time = -1
-    
-    def id_num(self):
-        return self._id_num
+    # @property
+    # def id_num(self):
+    #     return self._id_num
     
     def is_free(self):
         return self._passenger is None
